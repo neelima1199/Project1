@@ -8,7 +8,7 @@ From a system design perspective, Neelora is built using a monorepo architecture
 
 The user-facing application (storefront) is designed using modern UI principles with smooth animations and responsive layouts, while the dashboard provides administrative capabilities such as monitoring and analytics. Shared logic, including UI components and AI functionalities, is separated into reusable packages to ensure a clean and organized codebase.
 
-# ✨ Key Features
+# Key Features
 
 * AI-powered product recommendation and assistance system
 * Dynamic pricing based on demand patterns
