@@ -1,0 +1,105 @@
+:root {
+  /* ── Dark Palette ──────────────────────────────────────────────────────── */
+  --bg-deep:       #050508;
+  --bg-dark:       #0a0a0f;
+  --bg-surface:    #111118;
+  --bg-card:       #13131a;
+  --bg-obsidian:   #000000;
+  --bg-bone:       #050508;        /* repurposed as page background */
+
+  --accent-brass:       #C9A96E;
+  --accent-brass-muted: rgba(201, 169, 110, 0.18);
+  --accent-gold:        #F0C060;
+  --accent-glow:        rgba(201, 169, 110, 0.35);
+
+  --text-obsidian: #E8E4DB;        /* light on dark */
+  --text-bone:     #E8E4DB;
+  --text-muted:    #6B6B7B;
+  --text-dim:      #3B3B4A;
+
+  /* Museum spacing */
+  --pill-radius:      100px;
+  --sharp-radius:     0px;
+  --standard-radius:  6px;
+
+  /* Transitions */
+  --transition-reveal: cubic-bezier(0.77, 0, 0.175, 1);
+  --transition-speed:  0.6s;
+}
+
+/* ── Base ────────────────────────────────────────────────────────────────── */
+body {
+  background-color: var(--bg-deep);
+  color: var(--text-obsidian);
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, .serif-heading {
+  font-family: 'Playfair Display', serif;
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  color: var(--text-bone);
+}
+
+.mono {
+  font-family: 'IBM Plex Mono', monospace;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+}
+
+/* ── Pill Button (dark variant) ─────────────────────────────────────────── */
+.pill-button {
+  border-radius: var(--pill-radius);
+  padding: 0.75rem 2rem;
+  border: 1px solid var(--accent-brass);
+  background: transparent;
+  color: var(--accent-brass);
+  cursor: pointer;
+  transition: all 0.4s var(--transition-reveal);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.pill-button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--accent-brass);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s var(--transition-reveal);
+  z-index: -1;
+}
+
+.pill-button:hover {
+  color: var(--bg-deep);
+}
+.pill-button:hover::before {
+  transform: scaleX(1);
+}
+
+/* ── Obsidian Card (dark) ───────────────────────────────────────────────── */
+.obsidian-card {
+  border-top: 1px solid var(--accent-brass-muted);
+  padding: 2rem 0;
+  background: transparent;
+}
+
+/* ── Brass divider ──────────────────────────────────────────────────────── */
+.brass-line {
+  height: 1px;
+  background: var(--accent-brass-muted);
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.reveal-text {
+  overflow: hidden;
+  display: block;
+}

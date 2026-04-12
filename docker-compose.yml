@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  storefront:
+    build:
+      context: .
+      dockerfile: apps/storefront/Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_GEMINI_API_KEY=${GEMINI_API_KEY}
+    networks:
+      - aether-net
+
+  dashboard:
+    build:
+      context: .
+      dockerfile: apps/dashboard/Dockerfile
+    ports:
+      - "3001:3001"
+    networks:
+      - aether-net
+
+networks:
+  aether-net:
+    driver: bridge
