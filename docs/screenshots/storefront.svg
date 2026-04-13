@@ -1,0 +1,32 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="#050505"/>
+  <!-- Grid -->
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+  </pattern>
+  <rect width="1920" height="1080" fill="url(#grid)"/>
+
+  <!-- Aurora Gradients -->
+  <circle cx="1400" cy="300" r="400" fill="rgba(80, 120, 255, 0.15)" filter="blur(100px)"/>
+  <circle cx="500" cy="800" r="500" fill="rgba(180, 80, 255, 0.1)" filter="blur(150px)"/>
+
+  <!-- UI Header -->
+  <rect x="0" y="0" width="1920" height="80" fill="rgba(255,255,255,0.02)"/>
+  <text x="50" y="50" fill="#FFFFFF" font-family="monospace" font-size="24" font-weight="bold" letter-spacing="4">NEELORA STOREFRONT</text>
+  
+  <text x="1750" y="50" fill="#AAAAAA" font-family="sans-serif" font-size="18">CART (2)</text>
+  <text x="1650" y="50" fill="#AAAAAA" font-family="sans-serif" font-size="18">SIGN IN</text>
+
+  <!-- Product Card -->
+  <rect x="250" y="250" width="1000" height="600" rx="20" fill="rgba(25, 25, 30, 0.6)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="320" y="350" fill="#EAEAEA" font-family="serif" font-size="56" font-weight="300">OBSIDIAN FRAGRANCE</text>
+  <text x="320" y="420" fill="#888888" font-family="sans-serif" font-size="20">MUSEUM GRADE COLLECTION</text>
+  
+  <!-- Add to cart button -->
+  <rect x="320" y="700" width="200" height="60" rx="30" fill="#FFFFFF"/>
+  <text x="420" y="738" fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle">ADD TO CART</text>
+
+  <!-- Price -->
+  <text x="1100" y="740" fill="#FFFFFF" font-family="monospace" font-size="36">$245.00</text>
+</svg>

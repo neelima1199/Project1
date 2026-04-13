@@ -1,0 +1,35 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="#040404"/>
+  
+  <!-- Sidebar -->
+  <rect x="0" y="0" width="300" height="1080" fill="rgba(20,20,20,0.8)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="40" y="60" fill="#FFFFFF" font-family="monospace" font-size="20" font-weight="bold" letter-spacing="2">NEELORA ADMIN</text>
+  <text x="40" y="150" fill="rgba(255,255,255,0.8)" font-family="sans-serif" font-size="16">Overview</text>
+  <text x="40" y="210" fill="rgba(255,255,255,0.5)" font-family="sans-serif" font-size="16">Analytics</text>
+  <text x="40" y="270" fill="rgba(255,255,255,0.5)" font-family="sans-serif" font-size="16">AI Concierge</text>
+
+  <!-- Top bar -->
+  <text x="360" y="70" fill="#FFFFFF" font-family="serif" font-size="36">Platform Overview</text>
+  <text x="1700" y="60" fill="#AAAAAA" font-family="sans-serif" font-size="16">Admin User</text>
+
+  <!-- Cards -->
+  <rect x="360" y="150" width="450" height="200" rx="15" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.05)"/>
+  <text x="400" y="200" fill="#888888" font-family="sans-serif" font-size="16">Total Revenue</text>
+  <text x="400" y="270" fill="#FFFFFF" font-family="monospace" font-size="48">$84,291.50</text>
+  
+  <rect x="850" y="150" width="450" height="200" rx="15" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.05)"/>
+  <text x="890" y="200" fill="#888888" font-family="sans-serif" font-size="16">Active Users</text>
+  <text x="890" y="270" fill="#FFFFFF" font-family="monospace" font-size="48">1,492</text>
+
+  <rect x="1340" y="150" width="450" height="200" rx="15" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.05)"/>
+  <text x="1380" y="200" fill="#888888" font-family="sans-serif" font-size="16">AI Sentiment Score</text>
+  <text x="1380" y="270" fill="#A8FFB2" font-family="monospace" font-size="48">94.2 V/S</text>
+
+  <!-- Main Chart Placeholder -->
+  <rect x="360" y="400" width="1430" height="600" rx="15" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)"/>
+  <text x="400" y="460" fill="#FFFFFF" font-family="sans-serif" font-size="20">Revenue vs AI Cost Trajectory</text>
+  
+  <!-- Line chart line -->
+  <path d="M 400 900 Q 600 900 800 700 T 1200 600 T 1600 450" fill="none" stroke="rgba(100,150,255,0.8)" stroke-width="4"/>
+</svg>
