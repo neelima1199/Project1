@@ -2,18 +2,14 @@
   "name": "ai-ecommerce-platform",
   "version": "1.0.0",
   "private": true,
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
-"scripts": {
-  "dev": "next dev",
-  "build": "next build",
-  "start": "next start"
-}
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
   "dependencies": {
-    "next": "^16.2.3",
-    "react": "^19.2.5",
-    "react-dom": "^19.2.5"
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
   }
 }
